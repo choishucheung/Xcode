@@ -7,8 +7,8 @@
 //
 
 #import "AppDelegate.h"
-#import "BNRHypnosisView.h"
 #import "BNRHypnosisViewController.h"
+#import "BNRReminderViewController.h"
 @interface AppDelegate ()
 
 @end
@@ -19,11 +19,23 @@
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
     self.window = [[UIWindow alloc]initWithFrame:[[UIScreen mainScreen]bounds]];
-    BNRHypnosisViewController *bvc = [[BNRHypnosisViewController alloc]init];
-    self.window.rootViewController = bvc;
-    self.window.backgroundColor = [UIColor blackColor];
-    [self.window makeKeyAndVisible];
+//    BNRHypnosisViewController *bvc = [[BNRHypnosisViewController alloc]init];
+//    self.window.rootViewController = bvc;
+//    self.window.backgroundColor = [UIColor blackColor];
+//    [self.window makeKeyAndVisible];
+    BNRHypnosisViewController *hvc = [[BNRHypnosisViewController alloc]init];
+    NSBundle *appBundle = [NSBundle mainBundle];
     
+    BNRReminderViewController *rvc = [[BNRReminderViewController alloc]initWithNibName:@"BNRReminderViewController" bundle:appBundle];
+    
+    UITabBarController *tbc = [[UITabBarController alloc]init];
+    
+    tbc.viewControllers = @[hvc,rvc];
+    
+    
+    self.window.rootViewController = tbc;
+    self.window.backgroundColor = [UIColor whiteColor];
+    [self.window makeKeyAndVisible];
     return YES;
 }
 
