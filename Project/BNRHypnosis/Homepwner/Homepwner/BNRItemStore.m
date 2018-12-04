@@ -7,7 +7,26 @@
 //
 
 #import "BNRItemStore.h"
+#import "BNRItem.h"
 
 @implementation BNRItemStore
+
++(instancetype)sharedStore{
+    static BNRItemStore *sharedStore = nil;
+    if(!sharedStore){
+        sharedStore = [[self alloc] initPrivate];
+    }
+    return sharedStore;
+}
+-(instancetype)init
+{
+    @throw [NSException exceptionWithName:@"singleton" reason:@"User+[BNRItemStroe shareStore]" userInfo:nil];
+    return nil;
+}
+
+-(instancetype)initPrivate{
+    self = [super init];
+    return  self;
+}
 
 @end

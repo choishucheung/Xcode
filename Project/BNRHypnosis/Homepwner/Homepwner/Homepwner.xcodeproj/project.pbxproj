@@ -17,6 +17,7 @@
 		D58625CE21B3BF220095967A /* HomepwnerUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = D58625CD21B3BF220095967A /* HomepwnerUITests.m */; };
 		D58625DD21B3C0680095967A /* BNRItemsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D58625DC21B3C0670095967A /* BNRItemsViewController.m */; };
 		D58625E021B3D17A0095967A /* BNRItemStore.m in Sources */ = {isa = PBXBuildFile; fileRef = D58625DF21B3D17A0095967A /* BNRItemStore.m */; };
+		D58625E321B3D6770095967A /* BNRItem.m in Sources */ = {isa = PBXBuildFile; fileRef = D58625E221B3D6770095967A /* BNRItem.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -57,6 +58,8 @@
 		D58625DC21B3C0670095967A /* BNRItemsViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BNRItemsViewController.m; sourceTree = "<group>"; };
 		D58625DE21B3D17A0095967A /* BNRItemStore.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BNRItemStore.h; sourceTree = "<group>"; };
 		D58625DF21B3D17A0095967A /* BNRItemStore.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BNRItemStore.m; sourceTree = "<group>"; };
+		D58625E121B3D6770095967A /* BNRItem.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BNRItem.h; sourceTree = "<group>"; };
+		D58625E221B3D6770095967A /* BNRItem.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BNRItem.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -88,6 +91,8 @@
 			isa = PBXGroup;
 			children = (
 				D58625DE21B3D17A0095967A /* BNRItemStore.h */,
+				D58625E121B3D6770095967A /* BNRItem.h */,
+				D58625E221B3D6770095967A /* BNRItem.m */,
 				D58625DF21B3D17A0095967A /* BNRItemStore.m */,
 				D58625DB21B3C0670095967A /* BNRItemsViewController.h */,
 				D58625DC21B3C0670095967A /* BNRItemsViewController.m */,
@@ -276,6 +281,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				D58625E021B3D17A0095967A /* BNRItemStore.m in Sources */,
+				D58625E321B3D6770095967A /* BNRItem.m in Sources */,
 				D58625AE21B3BF220095967A /* ViewController.m in Sources */,
 				D58625B921B3BF220095967A /* main.m in Sources */,
 				D58625DD21B3C0680095967A /* BNRItemsViewController.m in Sources */,
