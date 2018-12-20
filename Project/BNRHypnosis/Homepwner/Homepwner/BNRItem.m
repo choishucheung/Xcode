@@ -26,7 +26,7 @@
     NSArray *randomNounList=@[@"a",@"b",@"c"];
     NSInteger nounIndex = arc4random()%[randomNounList count];
     NSInteger adjIndex = arc4random()%[randomAdjectiveList count];
-    NSString* randomName=[NSString stringWithFormat:@"%@%@",randomAdjectiveList[adjIndex],randomNounList[nounIndex]];
+    NSString* randomName=[NSString stringWithFormat:@"%@%@",[randomAdjectiveList objectAtIndex:adjIndex],[randomNounList objectAtIndex:nounIndex]];
     
     int randomValue=arc4random()%100;
     NSString *randomSerialNumber = [NSString stringWithFormat:@"%c%c%c%c%c",
@@ -37,6 +37,11 @@
                                     '0'+arc4random()%10];
     BNRItem *newItem = [[self alloc] initWithItemName:randomName valueInDollars:randomValue serialNumber:randomSerialNumber];
     return newItem;
+}
+
+-(NSString *)description{
+    NSString *descriptionString = [[NSString alloc]initWithFormat:@"%@ (%@):Worth $%d,recorded on %@",self.itemName,self.serialNumber,self.valueInDollars,self.dateCreated];
+    return descriptionString;
 }
 
 @end

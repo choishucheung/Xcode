@@ -35,7 +35,7 @@
     return  self;
 }
 - (NSArray *)allItem{
-    return self.privateItems;
+    return [self.privateItems copy];
 }
 
 -(BNRItem *)createItem{

@@ -34,5 +34,9 @@
     cell.textLabel.text = [item description];
     return cell;
 }
+- (void)viewDidLoad{
+    [super viewDidLoad];
+    [self.tableView registerClass:[UITableViewCell class] forCellReuseIdentifier:@"UITableViewCell"];
+}
 
 @end
