@@ -39,6 +39,17 @@
     cell.textLabel.text = [item description];
     return cell;
 }
+
+-(void)tableView:(UITableView *)tableView commitEditingStyle:(UITableViewCellEditingStyle)editingStyle forRowAtIndexPath:(NSIndexPath *)indexPath{
+    if(editingStyle == UITableViewCellEditingStyleDelete){
+        NSArray *items = [[BNRItemStore sharedStore]allItem];
+        BNRItem *item = items[indexPath.row];
+        [[BNRItemStore sharedStore]remoteItem:item];
+        [tableView deleteRowsAtIndexPaths:@[indexPath] withRowAnimation:UITableViewRowAnimationBottom];
+        
+    }
+}
+
 - (void)viewDidLoad{
     [super viewDidLoad];
     [self.tableView registerClass:[UITableViewCell class] forCellReuseIdentifier:@"UITableViewCell"];
@@ -74,4 +85,7 @@
     }
     return _headerView;
 }
+
+
+
 @end

@@ -43,4 +43,8 @@
     [self.privateItems addObject:item];
     return item;
 }
+
+-(void)remoteItem:(BNRItem*)item{
+    [self.privateItems removeObjectIdenticalTo:item];
+}
 @end
