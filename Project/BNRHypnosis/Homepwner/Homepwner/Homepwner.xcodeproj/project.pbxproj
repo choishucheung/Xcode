@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		8EBA69FC21CBBD98002608E4 /* HeaderView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8EBA69FB21CBBD98002608E4 /* HeaderView.xib */; };
 		D58625AB21B3BF220095967A /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = D58625AA21B3BF220095967A /* AppDelegate.m */; };
 		D58625AE21B3BF220095967A /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D58625AD21B3BF220095967A /* ViewController.m */; };
 		D58625B121B3BF220095967A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D58625AF21B3BF220095967A /* Main.storyboard */; };
@@ -38,6 +39,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		8EBA69FB21CBBD98002608E4 /* HeaderView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HeaderView.xib; sourceTree = "<group>"; };
 		D58625A621B3BF220095967A /* Homepwner.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Homepwner.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D58625A921B3BF220095967A /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		D58625AA21B3BF220095967A /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -96,6 +98,7 @@
 				D58625DF21B3D17A0095967A /* BNRItemStore.m */,
 				D58625DB21B3C0670095967A /* BNRItemsViewController.h */,
 				D58625DC21B3C0670095967A /* BNRItemsViewController.m */,
+				8EBA69FB21CBBD98002608E4 /* HeaderView.xib */,
 				D58625A821B3BF220095967A /* Homepwner */,
 				D58625C121B3BF220095967A /* HomepwnerTests */,
 				D58625CC21B3BF220095967A /* HomepwnerUITests */,
@@ -256,6 +259,7 @@
 				D58625B621B3BF220095967A /* LaunchScreen.storyboard in Resources */,
 				D58625B321B3BF220095967A /* Assets.xcassets in Resources */,
 				D58625B121B3BF220095967A /* Main.storyboard in Resources */,
+				8EBA69FC21CBBD98002608E4 /* HeaderView.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
