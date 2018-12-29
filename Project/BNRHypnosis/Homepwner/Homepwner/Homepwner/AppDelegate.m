@@ -18,8 +18,12 @@
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
     BNRItemsViewController *ivc = [[BNRItemsViewController alloc]init];
+    
+    UINavigationController *navController= [[UINavigationController alloc]initWithRootViewController:ivc];
+    
     self.window = [[UIWindow alloc]initWithFrame:[[UIScreen mainScreen]bounds]];
-    self.window.rootViewController = ivc;
+    //self.window.rootViewController = ivc;
+    self.window.rootViewController = navController;
     self.window.backgroundColor = [UIColor blackColor];
     [self.window makeKeyAndVisible];
     return YES;

@@ -20,6 +20,8 @@
         //for(int i=0;i<5;i++){
         //    [[BNRItemStore sharedStore]createItem];
         //}
+        UINavigationItem *uini= self.navigationItem;
+        uini.title = @"Homepwner";
     }
     return self;
 }
@@ -48,6 +50,11 @@
         [tableView deleteRowsAtIndexPaths:@[indexPath] withRowAnimation:UITableViewRowAnimationBottom];
         
     }
+}
+
+- (void)tableView:(UITableView *)tableView moveRowAtIndexPath:(NSIndexPath *)sourceIndexPath toIndexPath:(NSIndexPath *)destinationIndexPath{
+    [[BNRItemStore sharedStore]moveItemAtIndex:sourceIndexPath.row toIndex:destinationIndexPath.row
+     ];
 }
 
 - (void)viewDidLoad{
@@ -85,7 +92,53 @@
     }
     return _headerView;
 }
+- (NSString*)tableView:(UITableView*)tableView titleForDeleteConfirmationButtonForRowAtIndexPath:(NSIndexPath*)indexPath{
+    
+    return@"删除";
+    
+}
+-(BOOL)tableView:(UITableView *)tableView
+canMoveRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    NSArray *items = [[BNRItemStore sharedStore] allItem];
+    if (indexPath.row + 1 == [items count]) {
+        return NO;
+    }
+    return YES;
+}
 
+-(NSIndexPath *) tableView: (UITableView *) tableView
+targetIndexPathForMoveFromRowAtIndexPath: (NSIndexPath *) source
+       toProposedIndexPath: (NSIndexPath *) destination
+{
+    NSArray *items = [[BNRItemStore sharedStore] allItem];
+    if (destination.row < [items count] - 1) {
+        return destination;
+    }
+    NSIndexPath *indexPath = nil;
+    // If your table can have <= 2 items, you might want to robusticize the index math.
+    if (destination.row == 0) {
+        indexPath = [NSIndexPath indexPathForRow: 1  inSection: 0];
+    } else {
+        indexPath = [NSIndexPath indexPathForRow: items.count - 2
+                                       inSection: 0];
+    }
+    return indexPath;
+}
 
+-(void) tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    BNRDetailViewController *bdvc = [[BNRDetailViewController alloc]init];
+    [self.navigationController pushViewController:bdvc animated:YES];
+    NSArray *items = [[BNRItemStore sharedStore]allItem];
+    BNRItem *item = items[indexPath.row];
+    bdvc.item = item;
+}
+
+-(void) viewWillAppear:(BOOL)animated{
+    
+    [self.tableView reloadData];
+    
+}
 
 @end

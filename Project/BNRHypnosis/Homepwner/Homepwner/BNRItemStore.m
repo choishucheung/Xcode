@@ -47,4 +47,13 @@
 -(void)remoteItem:(BNRItem*)item{
     [self.privateItems removeObjectIdenticalTo:item];
 }
+
+-(void)moveItemAtIndex:(NSUInteger)formIndex toIndex:(NSInteger)toIndex{
+    if(formIndex==toIndex){
+        return;
+    }
+    BNRItem* item = self.privateItems[formIndex];
+    [self.privateItems removeObjectAtIndex:formIndex];
+}
+
 @end
