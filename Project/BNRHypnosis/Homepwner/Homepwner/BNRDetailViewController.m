@@ -13,6 +13,8 @@
 @property (weak, nonatomic) IBOutlet UITextField *SerialField;
 @property (weak, nonatomic) IBOutlet UITextField *ValueField;
 @property (weak, nonatomic) IBOutlet UILabel *dateLabel;
+@property (weak, nonatomic) IBOutlet UIImageView *imageView;
+@property (weak, nonatomic) IBOutlet UIToolbar *toolBar;
 
 @end
 
@@ -38,4 +40,10 @@
     item.serialNumber = self.SerialField.text;
     item.valueInDollars = [self.ValueField.text intValue];
 }
+
+
+- (IBAction)takePicture:(id)sender {
+}
+
+
 @end
