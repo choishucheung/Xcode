@@ -43,6 +43,12 @@
 
 
 - (IBAction)takePicture:(id)sender {
+    UIImagePickerController *uipc = [[UIImagePickerController alloc]init];
+    if([UIImagePickerController isSourceTypeAvailable:UIImagePickerControllerSourceTypeCamera]){
+        uipc.sourceType = UIImagePickerControllerSourceTypeCamera;
+    }else{
+        uipc.sourceType = UIImagePickerControllerSourceTypePhotoLibrary;
+    }
 }
 
 
