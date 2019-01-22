@@ -1,0 +1,995 @@
+{
+	"version": "2.0.0",
+	"tasks": [
+		{
+			"label": "CarDemo Mac Debug Build",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Mac/Build.sh",
+			"args": [
+				"CarDemo",
+				"Mac",
+				"Debug",
+				"/Users/v_caisxcai/Documents/Unreal Projects/CarDemo/CarDemo.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/Users/v_caisxcai/Unreal/UE_4.21"
+			}
+		},
+		{
+			"label": "CarDemo Mac Debug Rebuild",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Mac/Build.sh",
+			"args": [
+				"CarDemo",
+				"Mac",
+				"Debug",
+				"/Users/v_caisxcai/Documents/Unreal Projects/CarDemo/CarDemo.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"dependsOn": [
+				"CarDemo Mac Debug Clean"
+			],
+			"type": "shell",
+			"options": {
+				"cwd": "/Users/v_caisxcai/Unreal/UE_4.21"
+			}
+		},
+		{
+			"label": "CarDemo Mac Debug Clean",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Mac/Build.sh",
+			"args": [
+				"CarDemo",
+				"Mac",
+				"Debug",
+				"/Users/v_caisxcai/Documents/Unreal Projects/CarDemo/CarDemo.uproject",
+				"-waitmutex",
+				"-clean"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/Users/v_caisxcai/Unreal/UE_4.21"
+			}
+		},
+		{
+			"label": "CarDemo Mac DebugGame Build",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Mac/Build.sh",
+			"args": [
+				"CarDemo",
+				"Mac",
+				"DebugGame",
+				"/Users/v_caisxcai/Documents/Unreal Projects/CarDemo/CarDemo.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/Users/v_caisxcai/Unreal/UE_4.21"
+			}
+		},
+		{
+			"label": "CarDemo Mac DebugGame Rebuild",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Mac/Build.sh",
+			"args": [
+				"CarDemo",
+				"Mac",
+				"DebugGame",
+				"/Users/v_caisxcai/Documents/Unreal Projects/CarDemo/CarDemo.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"dependsOn": [
+				"CarDemo Mac DebugGame Clean"
+			],
+			"type": "shell",
+			"options": {
+				"cwd": "/Users/v_caisxcai/Unreal/UE_4.21"
+			}
+		},
+		{
+			"label": "CarDemo Mac DebugGame Clean",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Mac/Build.sh",
+			"args": [
+				"CarDemo",
+				"Mac",
+				"DebugGame",
+				"/Users/v_caisxcai/Documents/Unreal Projects/CarDemo/CarDemo.uproject",
+				"-waitmutex",
+				"-clean"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/Users/v_caisxcai/Unreal/UE_4.21"
+			}
+		},
+		{
+			"label": "CarDemo Mac Development Build",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Mac/Build.sh",
+			"args": [
+				"CarDemo",
+				"Mac",
+				"Development",
+				"/Users/v_caisxcai/Documents/Unreal Projects/CarDemo/CarDemo.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/Users/v_caisxcai/Unreal/UE_4.21"
+			}
+		},
+		{
+			"label": "CarDemo Mac Development Rebuild",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Mac/Build.sh",
+			"args": [
+				"CarDemo",
+				"Mac",
+				"Development",
+				"/Users/v_caisxcai/Documents/Unreal Projects/CarDemo/CarDemo.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"dependsOn": [
+				"CarDemo Mac Development Clean"
+			],
+			"type": "shell",
+			"options": {
+				"cwd": "/Users/v_caisxcai/Unreal/UE_4.21"
+			}
+		},
+		{
+			"label": "CarDemo Mac Development Clean",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Mac/Build.sh",
+			"args": [
+				"CarDemo",
+				"Mac",
+				"Development",
+				"/Users/v_caisxcai/Documents/Unreal Projects/CarDemo/CarDemo.uproject",
+				"-waitmutex",
+				"-clean"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/Users/v_caisxcai/Unreal/UE_4.21"
+			}
+		},
+		{
+			"label": "CarDemo Mac Shipping Build",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Mac/Build.sh",
+			"args": [
+				"CarDemo",
+				"Mac",
+				"Shipping",
+				"/Users/v_caisxcai/Documents/Unreal Projects/CarDemo/CarDemo.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/Users/v_caisxcai/Unreal/UE_4.21"
+			}
+		},
+		{
+			"label": "CarDemo Mac Shipping Rebuild",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Mac/Build.sh",
+			"args": [
+				"CarDemo",
+				"Mac",
+				"Shipping",
+				"/Users/v_caisxcai/Documents/Unreal Projects/CarDemo/CarDemo.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"dependsOn": [
+				"CarDemo Mac Shipping Clean"
+			],
+			"type": "shell",
+			"options": {
+				"cwd": "/Users/v_caisxcai/Unreal/UE_4.21"
+			}
+		},
+		{
+			"label": "CarDemo Mac Shipping Clean",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Mac/Build.sh",
+			"args": [
+				"CarDemo",
+				"Mac",
+				"Shipping",
+				"/Users/v_caisxcai/Documents/Unreal Projects/CarDemo/CarDemo.uproject",
+				"-waitmutex",
+				"-clean"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/Users/v_caisxcai/Unreal/UE_4.21"
+			}
+		},
+		{
+			"label": "CarDemo Mac Test Build",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Mac/Build.sh",
+			"args": [
+				"CarDemo",
+				"Mac",
+				"Test",
+				"/Users/v_caisxcai/Documents/Unreal Projects/CarDemo/CarDemo.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/Users/v_caisxcai/Unreal/UE_4.21"
+			}
+		},
+		{
+			"label": "CarDemo Mac Test Rebuild",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Mac/Build.sh",
+			"args": [
+				"CarDemo",
+				"Mac",
+				"Test",
+				"/Users/v_caisxcai/Documents/Unreal Projects/CarDemo/CarDemo.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"dependsOn": [
+				"CarDemo Mac Test Clean"
+			],
+			"type": "shell",
+			"options": {
+				"cwd": "/Users/v_caisxcai/Unreal/UE_4.21"
+			}
+		},
+		{
+			"label": "CarDemo Mac Test Clean",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Mac/Build.sh",
+			"args": [
+				"CarDemo",
+				"Mac",
+				"Test",
+				"/Users/v_caisxcai/Documents/Unreal Projects/CarDemo/CarDemo.uproject",
+				"-waitmutex",
+				"-clean"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/Users/v_caisxcai/Unreal/UE_4.21"
+			}
+		},
+		{
+			"label": "CarDemo IOS Debug Build",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Mac/Build.sh",
+			"args": [
+				"CarDemo",
+				"IOS",
+				"Debug",
+				"/Users/v_caisxcai/Documents/Unreal Projects/CarDemo/CarDemo.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/Users/v_caisxcai/Unreal/UE_4.21"
+			}
+		},
+		{
+			"label": "CarDemo IOS Debug Rebuild",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Mac/Build.sh",
+			"args": [
+				"CarDemo",
+				"IOS",
+				"Debug",
+				"/Users/v_caisxcai/Documents/Unreal Projects/CarDemo/CarDemo.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"dependsOn": [
+				"CarDemo IOS Debug Clean"
+			],
+			"type": "shell",
+			"options": {
+				"cwd": "/Users/v_caisxcai/Unreal/UE_4.21"
+			}
+		},
+		{
+			"label": "CarDemo IOS Debug Clean",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Mac/Build.sh",
+			"args": [
+				"CarDemo",
+				"IOS",
+				"Debug",
+				"/Users/v_caisxcai/Documents/Unreal Projects/CarDemo/CarDemo.uproject",
+				"-waitmutex",
+				"-clean"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/Users/v_caisxcai/Unreal/UE_4.21"
+			}
+		},
+		{
+			"label": "CarDemo IOS DebugGame Build",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Mac/Build.sh",
+			"args": [
+				"CarDemo",
+				"IOS",
+				"DebugGame",
+				"/Users/v_caisxcai/Documents/Unreal Projects/CarDemo/CarDemo.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/Users/v_caisxcai/Unreal/UE_4.21"
+			}
+		},
+		{
+			"label": "CarDemo IOS DebugGame Rebuild",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Mac/Build.sh",
+			"args": [
+				"CarDemo",
+				"IOS",
+				"DebugGame",
+				"/Users/v_caisxcai/Documents/Unreal Projects/CarDemo/CarDemo.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"dependsOn": [
+				"CarDemo IOS DebugGame Clean"
+			],
+			"type": "shell",
+			"options": {
+				"cwd": "/Users/v_caisxcai/Unreal/UE_4.21"
+			}
+		},
+		{
+			"label": "CarDemo IOS DebugGame Clean",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Mac/Build.sh",
+			"args": [
+				"CarDemo",
+				"IOS",
+				"DebugGame",
+				"/Users/v_caisxcai/Documents/Unreal Projects/CarDemo/CarDemo.uproject",
+				"-waitmutex",
+				"-clean"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/Users/v_caisxcai/Unreal/UE_4.21"
+			}
+		},
+		{
+			"label": "CarDemo IOS Development Build",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Mac/Build.sh",
+			"args": [
+				"CarDemo",
+				"IOS",
+				"Development",
+				"/Users/v_caisxcai/Documents/Unreal Projects/CarDemo/CarDemo.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/Users/v_caisxcai/Unreal/UE_4.21"
+			}
+		},
+		{
+			"label": "CarDemo IOS Development Rebuild",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Mac/Build.sh",
+			"args": [
+				"CarDemo",
+				"IOS",
+				"Development",
+				"/Users/v_caisxcai/Documents/Unreal Projects/CarDemo/CarDemo.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"dependsOn": [
+				"CarDemo IOS Development Clean"
+			],
+			"type": "shell",
+			"options": {
+				"cwd": "/Users/v_caisxcai/Unreal/UE_4.21"
+			}
+		},
+		{
+			"label": "CarDemo IOS Development Clean",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Mac/Build.sh",
+			"args": [
+				"CarDemo",
+				"IOS",
+				"Development",
+				"/Users/v_caisxcai/Documents/Unreal Projects/CarDemo/CarDemo.uproject",
+				"-waitmutex",
+				"-clean"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/Users/v_caisxcai/Unreal/UE_4.21"
+			}
+		},
+		{
+			"label": "CarDemo IOS Shipping Build",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Mac/Build.sh",
+			"args": [
+				"CarDemo",
+				"IOS",
+				"Shipping",
+				"/Users/v_caisxcai/Documents/Unreal Projects/CarDemo/CarDemo.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/Users/v_caisxcai/Unreal/UE_4.21"
+			}
+		},
+		{
+			"label": "CarDemo IOS Shipping Rebuild",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Mac/Build.sh",
+			"args": [
+				"CarDemo",
+				"IOS",
+				"Shipping",
+				"/Users/v_caisxcai/Documents/Unreal Projects/CarDemo/CarDemo.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"dependsOn": [
+				"CarDemo IOS Shipping Clean"
+			],
+			"type": "shell",
+			"options": {
+				"cwd": "/Users/v_caisxcai/Unreal/UE_4.21"
+			}
+		},
+		{
+			"label": "CarDemo IOS Shipping Clean",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Mac/Build.sh",
+			"args": [
+				"CarDemo",
+				"IOS",
+				"Shipping",
+				"/Users/v_caisxcai/Documents/Unreal Projects/CarDemo/CarDemo.uproject",
+				"-waitmutex",
+				"-clean"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/Users/v_caisxcai/Unreal/UE_4.21"
+			}
+		},
+		{
+			"label": "CarDemo IOS Test Build",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Mac/Build.sh",
+			"args": [
+				"CarDemo",
+				"IOS",
+				"Test",
+				"/Users/v_caisxcai/Documents/Unreal Projects/CarDemo/CarDemo.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/Users/v_caisxcai/Unreal/UE_4.21"
+			}
+		},
+		{
+			"label": "CarDemo IOS Test Rebuild",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Mac/Build.sh",
+			"args": [
+				"CarDemo",
+				"IOS",
+				"Test",
+				"/Users/v_caisxcai/Documents/Unreal Projects/CarDemo/CarDemo.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"dependsOn": [
+				"CarDemo IOS Test Clean"
+			],
+			"type": "shell",
+			"options": {
+				"cwd": "/Users/v_caisxcai/Unreal/UE_4.21"
+			}
+		},
+		{
+			"label": "CarDemo IOS Test Clean",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Mac/Build.sh",
+			"args": [
+				"CarDemo",
+				"IOS",
+				"Test",
+				"/Users/v_caisxcai/Documents/Unreal Projects/CarDemo/CarDemo.uproject",
+				"-waitmutex",
+				"-clean"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/Users/v_caisxcai/Unreal/UE_4.21"
+			}
+		},
+		{
+			"label": "CarDemo HTML5 Debug Build",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Mac/Build.sh",
+			"args": [
+				"CarDemo",
+				"HTML5",
+				"Debug",
+				"/Users/v_caisxcai/Documents/Unreal Projects/CarDemo/CarDemo.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/Users/v_caisxcai/Unreal/UE_4.21"
+			}
+		},
+		{
+			"label": "CarDemo HTML5 Debug Rebuild",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Mac/Build.sh",
+			"args": [
+				"CarDemo",
+				"HTML5",
+				"Debug",
+				"/Users/v_caisxcai/Documents/Unreal Projects/CarDemo/CarDemo.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"dependsOn": [
+				"CarDemo HTML5 Debug Clean"
+			],
+			"type": "shell",
+			"options": {
+				"cwd": "/Users/v_caisxcai/Unreal/UE_4.21"
+			}
+		},
+		{
+			"label": "CarDemo HTML5 Debug Clean",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Mac/Build.sh",
+			"args": [
+				"CarDemo",
+				"HTML5",
+				"Debug",
+				"/Users/v_caisxcai/Documents/Unreal Projects/CarDemo/CarDemo.uproject",
+				"-waitmutex",
+				"-clean"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/Users/v_caisxcai/Unreal/UE_4.21"
+			}
+		},
+		{
+			"label": "CarDemo HTML5 DebugGame Build",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Mac/Build.sh",
+			"args": [
+				"CarDemo",
+				"HTML5",
+				"DebugGame",
+				"/Users/v_caisxcai/Documents/Unreal Projects/CarDemo/CarDemo.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/Users/v_caisxcai/Unreal/UE_4.21"
+			}
+		},
+		{
+			"label": "CarDemo HTML5 DebugGame Rebuild",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Mac/Build.sh",
+			"args": [
+				"CarDemo",
+				"HTML5",
+				"DebugGame",
+				"/Users/v_caisxcai/Documents/Unreal Projects/CarDemo/CarDemo.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"dependsOn": [
+				"CarDemo HTML5 DebugGame Clean"
+			],
+			"type": "shell",
+			"options": {
+				"cwd": "/Users/v_caisxcai/Unreal/UE_4.21"
+			}
+		},
+		{
+			"label": "CarDemo HTML5 DebugGame Clean",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Mac/Build.sh",
+			"args": [
+				"CarDemo",
+				"HTML5",
+				"DebugGame",
+				"/Users/v_caisxcai/Documents/Unreal Projects/CarDemo/CarDemo.uproject",
+				"-waitmutex",
+				"-clean"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/Users/v_caisxcai/Unreal/UE_4.21"
+			}
+		},
+		{
+			"label": "CarDemo HTML5 Development Build",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Mac/Build.sh",
+			"args": [
+				"CarDemo",
+				"HTML5",
+				"Development",
+				"/Users/v_caisxcai/Documents/Unreal Projects/CarDemo/CarDemo.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/Users/v_caisxcai/Unreal/UE_4.21"
+			}
+		},
+		{
+			"label": "CarDemo HTML5 Development Rebuild",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Mac/Build.sh",
+			"args": [
+				"CarDemo",
+				"HTML5",
+				"Development",
+				"/Users/v_caisxcai/Documents/Unreal Projects/CarDemo/CarDemo.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"dependsOn": [
+				"CarDemo HTML5 Development Clean"
+			],
+			"type": "shell",
+			"options": {
+				"cwd": "/Users/v_caisxcai/Unreal/UE_4.21"
+			}
+		},
+		{
+			"label": "CarDemo HTML5 Development Clean",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Mac/Build.sh",
+			"args": [
+				"CarDemo",
+				"HTML5",
+				"Development",
+				"/Users/v_caisxcai/Documents/Unreal Projects/CarDemo/CarDemo.uproject",
+				"-waitmutex",
+				"-clean"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/Users/v_caisxcai/Unreal/UE_4.21"
+			}
+		},
+		{
+			"label": "CarDemo HTML5 Shipping Build",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Mac/Build.sh",
+			"args": [
+				"CarDemo",
+				"HTML5",
+				"Shipping",
+				"/Users/v_caisxcai/Documents/Unreal Projects/CarDemo/CarDemo.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/Users/v_caisxcai/Unreal/UE_4.21"
+			}
+		},
+		{
+			"label": "CarDemo HTML5 Shipping Rebuild",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Mac/Build.sh",
+			"args": [
+				"CarDemo",
+				"HTML5",
+				"Shipping",
+				"/Users/v_caisxcai/Documents/Unreal Projects/CarDemo/CarDemo.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"dependsOn": [
+				"CarDemo HTML5 Shipping Clean"
+			],
+			"type": "shell",
+			"options": {
+				"cwd": "/Users/v_caisxcai/Unreal/UE_4.21"
+			}
+		},
+		{
+			"label": "CarDemo HTML5 Shipping Clean",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Mac/Build.sh",
+			"args": [
+				"CarDemo",
+				"HTML5",
+				"Shipping",
+				"/Users/v_caisxcai/Documents/Unreal Projects/CarDemo/CarDemo.uproject",
+				"-waitmutex",
+				"-clean"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/Users/v_caisxcai/Unreal/UE_4.21"
+			}
+		},
+		{
+			"label": "CarDemo HTML5 Test Build",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Mac/Build.sh",
+			"args": [
+				"CarDemo",
+				"HTML5",
+				"Test",
+				"/Users/v_caisxcai/Documents/Unreal Projects/CarDemo/CarDemo.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/Users/v_caisxcai/Unreal/UE_4.21"
+			}
+		},
+		{
+			"label": "CarDemo HTML5 Test Rebuild",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Mac/Build.sh",
+			"args": [
+				"CarDemo",
+				"HTML5",
+				"Test",
+				"/Users/v_caisxcai/Documents/Unreal Projects/CarDemo/CarDemo.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"dependsOn": [
+				"CarDemo HTML5 Test Clean"
+			],
+			"type": "shell",
+			"options": {
+				"cwd": "/Users/v_caisxcai/Unreal/UE_4.21"
+			}
+		},
+		{
+			"label": "CarDemo HTML5 Test Clean",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Mac/Build.sh",
+			"args": [
+				"CarDemo",
+				"HTML5",
+				"Test",
+				"/Users/v_caisxcai/Documents/Unreal Projects/CarDemo/CarDemo.uproject",
+				"-waitmutex",
+				"-clean"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/Users/v_caisxcai/Unreal/UE_4.21"
+			}
+		},
+		{
+			"label": "CarDemoEditor Mac Debug Build",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Mac/Build.sh",
+			"args": [
+				"CarDemoEditor",
+				"Mac",
+				"Debug",
+				"/Users/v_caisxcai/Documents/Unreal Projects/CarDemo/CarDemo.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/Users/v_caisxcai/Unreal/UE_4.21"
+			}
+		},
+		{
+			"label": "CarDemoEditor Mac Debug Rebuild",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Mac/Build.sh",
+			"args": [
+				"CarDemoEditor",
+				"Mac",
+				"Debug",
+				"/Users/v_caisxcai/Documents/Unreal Projects/CarDemo/CarDemo.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"dependsOn": [
+				"CarDemoEditor Mac Debug Clean"
+			],
+			"type": "shell",
+			"options": {
+				"cwd": "/Users/v_caisxcai/Unreal/UE_4.21"
+			}
+		},
+		{
+			"label": "CarDemoEditor Mac Debug Clean",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Mac/Build.sh",
+			"args": [
+				"CarDemoEditor",
+				"Mac",
+				"Debug",
+				"/Users/v_caisxcai/Documents/Unreal Projects/CarDemo/CarDemo.uproject",
+				"-waitmutex",
+				"-clean"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/Users/v_caisxcai/Unreal/UE_4.21"
+			}
+		},
+		{
+			"label": "CarDemoEditor Mac DebugGame Build",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Mac/Build.sh",
+			"args": [
+				"CarDemoEditor",
+				"Mac",
+				"DebugGame",
+				"/Users/v_caisxcai/Documents/Unreal Projects/CarDemo/CarDemo.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/Users/v_caisxcai/Unreal/UE_4.21"
+			}
+		},
+		{
+			"label": "CarDemoEditor Mac DebugGame Rebuild",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Mac/Build.sh",
+			"args": [
+				"CarDemoEditor",
+				"Mac",
+				"DebugGame",
+				"/Users/v_caisxcai/Documents/Unreal Projects/CarDemo/CarDemo.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"dependsOn": [
+				"CarDemoEditor Mac DebugGame Clean"
+			],
+			"type": "shell",
+			"options": {
+				"cwd": "/Users/v_caisxcai/Unreal/UE_4.21"
+			}
+		},
+		{
+			"label": "CarDemoEditor Mac DebugGame Clean",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Mac/Build.sh",
+			"args": [
+				"CarDemoEditor",
+				"Mac",
+				"DebugGame",
+				"/Users/v_caisxcai/Documents/Unreal Projects/CarDemo/CarDemo.uproject",
+				"-waitmutex",
+				"-clean"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/Users/v_caisxcai/Unreal/UE_4.21"
+			}
+		},
+		{
+			"label": "CarDemoEditor Mac Development Build",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Mac/Build.sh",
+			"args": [
+				"CarDemoEditor",
+				"Mac",
+				"Development",
+				"/Users/v_caisxcai/Documents/Unreal Projects/CarDemo/CarDemo.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/Users/v_caisxcai/Unreal/UE_4.21"
+			}
+		},
+		{
+			"label": "CarDemoEditor Mac Development Rebuild",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Mac/Build.sh",
+			"args": [
+				"CarDemoEditor",
+				"Mac",
+				"Development",
+				"/Users/v_caisxcai/Documents/Unreal Projects/CarDemo/CarDemo.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"dependsOn": [
+				"CarDemoEditor Mac Development Clean"
+			],
+			"type": "shell",
+			"options": {
+				"cwd": "/Users/v_caisxcai/Unreal/UE_4.21"
+			}
+		},
+		{
+			"label": "CarDemoEditor Mac Development Clean",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Mac/Build.sh",
+			"args": [
+				"CarDemoEditor",
+				"Mac",
+				"Development",
+				"/Users/v_caisxcai/Documents/Unreal Projects/CarDemo/CarDemo.uproject",
+				"-waitmutex",
+				"-clean"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/Users/v_caisxcai/Unreal/UE_4.21"
+			}
+		}
+	]
+}

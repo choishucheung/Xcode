@@ -1,0 +1,104 @@
+{
+	"version": "0.2.0",
+	"configurations": [
+		{
+			"name": "CarDemo (Debug)",
+			"request": "launch",
+			"preLaunchTask": "CarDemo Mac Debug Build",
+			"program": "/Users/v_caisxcai/Documents/Unreal Projects/CarDemo/Binaries/Mac/CarDemo-Mac-Debug.app/Contents/MacOS/CarDemo-Mac-Debug",
+			"args": [
+			],
+			"cwd": "/Users/v_caisxcai/Unreal/UE_4.21",
+			"type": "lldb"
+		},
+		{
+			"name": "CarDemo (DebugGame)",
+			"request": "launch",
+			"preLaunchTask": "CarDemo Mac DebugGame Build",
+			"program": "/Users/v_caisxcai/Documents/Unreal Projects/CarDemo/Binaries/Mac/CarDemo-Mac-DebugGame.app/Contents/MacOS/CarDemo-Mac-DebugGame",
+			"args": [
+			],
+			"cwd": "/Users/v_caisxcai/Unreal/UE_4.21",
+			"type": "lldb"
+		},
+		{
+			"name": "CarDemo (Development)",
+			"request": "launch",
+			"preLaunchTask": "CarDemo Mac Development Build",
+			"program": "/Users/v_caisxcai/Documents/Unreal Projects/CarDemo/Binaries/Mac/CarDemo.app/Contents/MacOS/CarDemo",
+			"args": [
+			],
+			"cwd": "/Users/v_caisxcai/Unreal/UE_4.21",
+			"type": "lldb"
+		},
+		{
+			"name": "CarDemo (Shipping)",
+			"request": "launch",
+			"preLaunchTask": "CarDemo Mac Shipping Build",
+			"program": "/Users/v_caisxcai/Documents/Unreal Projects/CarDemo/Binaries/Mac/CarDemo-Mac-Shipping.app/Contents/MacOS/CarDemo-Mac-Shipping",
+			"args": [
+			],
+			"cwd": "/Users/v_caisxcai/Unreal/UE_4.21",
+			"type": "lldb"
+		},
+		{
+			"name": "CarDemo (Test)",
+			"request": "launch",
+			"preLaunchTask": "CarDemo Mac Test Build",
+			"program": "/Users/v_caisxcai/Documents/Unreal Projects/CarDemo/Binaries/Mac/CarDemo-Mac-Test.app/Contents/MacOS/CarDemo-Mac-Test",
+			"args": [
+			],
+			"cwd": "/Users/v_caisxcai/Unreal/UE_4.21",
+			"type": "lldb"
+		},
+		{
+			"name": "CarDemoEditor (Debug)",
+			"request": "launch",
+			"preLaunchTask": "CarDemoEditor Mac Debug Build",
+			"program": "/Users/v_caisxcai/Unreal/UE_4.21/Engine/Binaries/Mac/UE4Editor-Mac-Debug.app/Contents/MacOS/UE4Editor-Mac-Debug",
+			"args": [
+				"/Users/v_caisxcai/Documents/Unreal Projects/CarDemo/CarDemo.uproject"
+			],
+			"cwd": "/Users/v_caisxcai/Unreal/UE_4.21",
+			"type": "lldb"
+		},
+		{
+			"name": "CarDemoEditor (DebugGame)",
+			"request": "launch",
+			"preLaunchTask": "CarDemoEditor Mac DebugGame Build",
+			"program": "/Users/v_caisxcai/Unreal/UE_4.21/Engine/Binaries/Mac/UE4Editor.app/Contents/MacOS/UE4Editor",
+			"args": [
+				"/Users/v_caisxcai/Documents/Unreal Projects/CarDemo/CarDemo.uproject"
+			],
+			"cwd": "/Users/v_caisxcai/Unreal/UE_4.21",
+			"type": "lldb"
+		},
+		{
+			"name": "CarDemoEditor (Development)",
+			"request": "launch",
+			"preLaunchTask": "CarDemoEditor Mac Development Build",
+			"program": "/Users/v_caisxcai/Unreal/UE_4.21/Engine/Binaries/Mac/UE4Editor.app/Contents/MacOS/UE4Editor",
+			"args": [
+				"/Users/v_caisxcai/Documents/Unreal Projects/CarDemo/CarDemo.uproject"
+			],
+			"cwd": "/Users/v_caisxcai/Unreal/UE_4.21",
+			"type": "lldb"
+		},
+		{
+			"name": "Generate Project Files",
+			"type": "mono",
+			"request": "launch",
+			"program": "/Users/v_caisxcai/Unreal/UE_4.21/Engine/Binaries/DotNET/UnrealBuildTool.exe",
+			"console": "internalConsole",
+			"args": [
+				"-projectfiles",
+				"-vscode",
+				"-project=\"/Users/v_caisxcai/Documents/Unreal Projects/CarDemo/CarDemo.uproject\"",
+				"-game",
+				"-engine"
+			],
+			"internalConsoleOptions": "openOnSessionStart",
+			"cwd": "/Users/v_caisxcai/Unreal/UE_4.21"
+		}
+	]
+}
