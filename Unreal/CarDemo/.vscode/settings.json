@@ -1,7 +1,9 @@
 {
 	"files.exclude": {
 		"/Users/v_caisxcai/Documents/Unreal Projects/CarDemo/.vscode": true,
+		"/Users/v_caisxcai/Documents/Unreal Projects/CarDemo/CarDemo.xcworkspace": true,
 		"/Users/v_caisxcai/Documents/Unreal Projects/CarDemo/Content": true,
-		"/Users/v_caisxcai/Documents/Unreal Projects/CarDemo/Intermediate": true
+		"/Users/v_caisxcai/Documents/Unreal Projects/CarDemo/Intermediate": true,
+		"/Users/v_caisxcai/Documents/Unreal Projects/CarDemo/Saved": true
 	}
 }
