@@ -5,7 +5,8 @@
 #include "CoreMinimal.h"
 #include "WheeledVehicle.h"
 #include "Vehicle.generated.h"
-class UcameraComponent;
+class UCameraComponent;
+class USpringArmComponent;
 /**
  * 
  */
@@ -13,8 +14,21 @@ UCLASS()
 class CARDEMO_API AVehicle : public AWheeledVehicle
 {
 	GENERATED_BODY()
-    UPROPERTY(VisiableAnywhere,Category="CameraComponent");
-    UcameraComponent* ExternalCamera;
-    AVehicle();
     
+protected:
+    UPROPERTY(VisibleAnywhere,Category="CameraComponent")
+    UCameraComponent* ExternalCamera;
+    
+    UPROPERTY(VisibleAnywhere,Category="CameraComponent")
+    USpringArmComponent* SpringArm;
+    
+    void MoveForward(float Value);
+    void MoveRight(float Value);
+    
+    void OnHandBreakPressed();
+    void OnHandBreakReleased();
+    
+public:
+    AVehicle();
+    virtual void SetupPlayerInputComponent(UInputComponent* PlayerInputComponent) override;
 };
