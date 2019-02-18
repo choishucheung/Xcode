@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		8E689BB8221AAED300C94816 /* BNRImageStore.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E689BB7221AAED300C94816 /* BNRImageStore.m */; };
 		8EBA69FC21CBBD98002608E4 /* HeaderView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8EBA69FB21CBBD98002608E4 /* HeaderView.xib */; };
 		8EBA6A0321D76058002608E4 /* BNRDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8EBA6A0121D76058002608E4 /* BNRDetailViewController.m */; };
 		8EBA6A0421D76058002608E4 /* BNRDetailViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8EBA6A0221D76058002608E4 /* BNRDetailViewController.xib */; };
@@ -41,6 +42,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		8E689BB0221AA98D00C94816 /* BNRImageStore.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BNRImageStore.h; sourceTree = "<group>"; };
+		8E689BB7221AAED300C94816 /* BNRImageStore.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BNRImageStore.m; sourceTree = "<group>"; };
 		8EBA69FB21CBBD98002608E4 /* HeaderView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HeaderView.xib; sourceTree = "<group>"; };
 		8EBA6A0021D76058002608E4 /* BNRDetailViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BNRDetailViewController.h; sourceTree = "<group>"; };
 		8EBA6A0121D76058002608E4 /* BNRDetailViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BNRDetailViewController.m; sourceTree = "<group>"; };
@@ -97,6 +100,8 @@
 		D586259D21B3BF220095967A = {
 			isa = PBXGroup;
 			children = (
+				8E689BB7221AAED300C94816 /* BNRImageStore.m */,
+				8E689BB0221AA98D00C94816 /* BNRImageStore.h */,
 				8EBA6A0021D76058002608E4 /* BNRDetailViewController.h */,
 				8EBA6A0121D76058002608E4 /* BNRDetailViewController.m */,
 				8EBA6A0221D76058002608E4 /* BNRDetailViewController.xib */,
@@ -297,6 +302,7 @@
 				D58625E321B3D6770095967A /* BNRItem.m in Sources */,
 				D58625AE21B3BF220095967A /* ViewController.m in Sources */,
 				8EBA6A0321D76058002608E4 /* BNRDetailViewController.m in Sources */,
+				8E689BB8221AAED300C94816 /* BNRImageStore.m in Sources */,
 				D58625B921B3BF220095967A /* main.m in Sources */,
 				D58625DD21B3C0680095967A /* BNRItemsViewController.m in Sources */,
 				D58625AB21B3BF220095967A /* AppDelegate.m in Sources */,

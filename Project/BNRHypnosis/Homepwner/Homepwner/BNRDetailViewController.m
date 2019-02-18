@@ -9,6 +9,7 @@
 #import "BNRDetailViewController.h"
 #import "BNRItem.h"
 @interface BNRDetailViewController ()
+<UINavigationBarDelegate,UIImagePickerControllerDelegate>
 @property (weak, nonatomic) IBOutlet UITextField *NameField;
 @property (weak, nonatomic) IBOutlet UITextField *SerialField;
 @property (weak, nonatomic) IBOutlet UITextField *ValueField;
@@ -49,7 +50,14 @@
     }else{
         uipc.sourceType = UIImagePickerControllerSourceTypePhotoLibrary;
     }
+    uipc.delegate = self;
+    [self presentViewController:uipc animated:YES completion:nil];
 }
 
+- (void)imagePickerController:(UIImagePickerController *)picker didFinishPickingMediaWithInfo:(NSDictionary<UIImagePickerControllerInfoKey,id> *)info{
+    UIImage *image = info[UIImagePickerControllerOriginalImage];
+    self.imageView.image = image;
+    [self dismissViewControllerAnimated:YES completion:nil];
+}
 
 @end

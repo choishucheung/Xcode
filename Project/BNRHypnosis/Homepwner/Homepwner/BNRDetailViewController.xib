@@ -85,7 +85,7 @@
                     <items>
                         <barButtonItem systemItem="camera" id="0H9-QR-yiO">
                             <connections>
-                                <action selector="takePicture:" destination="-1" id="skT-ku-3sC"/>
+                                <action selector="takePicture:" destination="-1" id="fA8-ix-GAG"/>
                             </connections>
                         </barButtonItem>
                     </items>
