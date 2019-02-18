@@ -6,6 +6,7 @@
 //  Copyright © 2019 choishucheung. All rights reserved.
 //
 #import <Foundation/Foundation.h>
+#import <UIKit/UIKit.h>
 @interface BNRImageStore:NSObject
 +(instancetype) sharedStore;
 -(void) setImage:(UIImage *)image forKey:(NSString *)key;

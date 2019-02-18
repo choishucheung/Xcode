@@ -6,7 +6,6 @@
 //  Copyright © 2019 choishucheung. All rights reserved.
 //
 #import "BNRImageStore.h"
-#import <UIKit/UIKit.h>
 
 @interface BNRImageStore()
 
@@ -14,18 +13,17 @@
 @end
 
 @implementation BNRImageStore
-+ (instancetype) shareStore{
-    static BNRImageStore *shareStore = nil;
-    if(!shareStore){
-        shareStore = [[self alloc]initPrivate];
++ (instancetype) sharedStore{
+    static BNRImageStore *sharedStore = nil;
+    if(!sharedStore){
+        sharedStore = [[self alloc]initPrivate];
     }
-    return shareStore;
+    return sharedStore;
 }
 
 - (instancetype)init{
-    @throw [NSException exceptionWithName:@"Singleton" reason:@"User+[BNRImageStore shareStore]" userInfo:nil];
+//    @throw [NSException exceptionWithName:@"Singleton" reason:@"User+[BNRImageStore shareStore]" userInfo:nil];
     return nil;
-    
 }
 
 -(instancetype)initPrivate{
@@ -36,12 +34,12 @@
     return  self;
 }
 
--(void) setImage:(id)image forKey:(NSString *)key{
-    [self.dictionary setObject:image forKey:key];
+-(void) setImage:(UIImage *)image forKey:(NSString *)key{
+    self.dictionary[key] = image;
 }
 
 -(UIImage *)imageForKey:(NSString *)key{
-    return [self.dictionary objectForKey:key];
+    return self.dictionary[key];
 }
 
 -(void) deleteIamgeForKey:(NSString *)key{

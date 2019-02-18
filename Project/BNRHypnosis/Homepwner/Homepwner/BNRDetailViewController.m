@@ -7,6 +7,7 @@
 //
 
 #import "BNRDetailViewController.h"
+#import "BNRImageStore.h"
 #import "BNRItem.h"
 @interface BNRDetailViewController ()
 <UINavigationBarDelegate,UIImagePickerControllerDelegate>
@@ -32,7 +33,9 @@
     self.NameField.text = item.itemName;
     self.SerialField.text = item.serialNumber;
     self.ValueField.text = [NSString stringWithFormat:@"%d",item.valueInDollars];
-    
+    NSString *itemKey = self.item.itemkey;
+    UIImage *imageToDisplay = [[BNRImageStore sharedStore] imageForKey:itemKey];
+    self.imageView.image = imageToDisplay;
 }
 -(void) viewWillDisappear:(BOOL)animated{
     [self.view endEditing:YES];
@@ -54,10 +57,11 @@
     [self presentViewController:uipc animated:YES completion:nil];
 }
 
-- (void)imagePickerController:(UIImagePickerController *)picker didFinishPickingMediaWithInfo:(NSDictionary<UIImagePickerControllerInfoKey,id> *)info{
+- (void)imagePickerController:(UIImagePickerController *)picker didFinishPickingMediaWithInfo:(NSDictionary *)info{
     UIImage *image = info[UIImagePickerControllerOriginalImage];
-    self.imageView.image = image;
-    [self dismissViewControllerAnimated:YES completion:nil];
+    NSLog(@"key=%@",self.item.itemkey);
+    [[BNRImageStore sharedStore]setImage:image forKey:self.item.itemkey];
+    [self dismissViewControllerAnimated:YES completion:nil];    
 }
 
 @end
