@@ -10,7 +10,7 @@
 #import "BNRImageStore.h"
 #import "BNRItem.h"
 @interface BNRDetailViewController ()
-<UINavigationBarDelegate,UIImagePickerControllerDelegate>
+<UINavigationBarDelegate,UIImagePickerControllerDelegate,UITextFieldDelegate>
 @property (weak, nonatomic) IBOutlet UITextField *NameField;
 @property (weak, nonatomic) IBOutlet UITextField *SerialField;
 @property (weak, nonatomic) IBOutlet UITextField *ValueField;
@@ -48,6 +48,10 @@
 
 - (IBAction)takePicture:(id)sender {
     UIImagePickerController *uipc = [[UIImagePickerController alloc]init];
+    NSArray * availableTypes = [UIImagePickerController availableMediaTypesForSourceType:UIImagePickerControllerSourceTypeCamera];
+    uipc.mediaTypes  = availableTypes;
+    uipc.sourceType = UIImagePickerControllerSourceTypeCamera;
+    uipc.delegate = self;
     if([UIImagePickerController isSourceTypeAvailable:UIImagePickerControllerSourceTypeCamera]){
         uipc.sourceType = UIImagePickerControllerSourceTypeCamera;
     }else{
@@ -58,10 +62,25 @@
 }
 
 - (void)imagePickerController:(UIImagePickerController *)picker didFinishPickingMediaWithInfo:(NSDictionary *)info{
-    UIImage *image = info[UIImagePickerControllerOriginalImage];
-    NSLog(@"key=%@",self.item.itemkey);
-    [[BNRImageStore sharedStore]setImage:image forKey:self.item.itemkey];
-    [self dismissViewControllerAnimated:YES completion:nil];    
+//    UIImage *image = info[UIImagePickerControllerOriginalImage];
+//    NSLog(@"key=%@",self.item.itemkey);
+//    [[BNRImageStore sharedStore]setImage:image forKey:self.item.itemkey];
+//    [self dismissViewControllerAnimated:YES completion:nil];
+    NSURL *mediaURL = info[UIImagePickerControllerMediaURL];
+    if(mediaURL){
+        if(UIVideoAtPathIsCompatibleWithSavedPhotosAlbum([mediaURL path])){
+            UISaveVideoAtPathToSavedPhotosAlbum([mediaURL path], nil, nil, nil);
+            [[NSFileManager defaultManager]removeItemAtPath:[mediaURL path] error:nil];
+        }
+    }
+}
+
+-(BOOL)textFieldShouldReturn:(UITextField *)textField{
+    [textField resignFirstResponder];
+    return YES;
+}
+- (IBAction)backgroundTapped:(id)sender {
+    [self.view endEditing:YES];
 }
 
 @end
