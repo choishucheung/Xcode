@@ -97,6 +97,7 @@
 		8E77B3F7221EA65F0070582B /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				CLASSPREFIX = BNR;
 				LastUpgradeCheck = 1010;
 				ORGANIZATIONNAME = choishucheung;
 				TargetAttributes = {
