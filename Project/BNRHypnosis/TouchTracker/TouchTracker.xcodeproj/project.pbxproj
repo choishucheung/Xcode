@@ -13,6 +13,9 @@
 		8E77B40C221EA6600070582B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8E77B40B221EA6600070582B /* Assets.xcassets */; };
 		8E77B40F221EA6600070582B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8E77B40D221EA6600070582B /* LaunchScreen.storyboard */; };
 		8E77B412221EA6600070582B /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E77B411221EA6600070582B /* main.m */; };
+		8E9D7DA3222414DB00117A57 /* BNRLine.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E9D7DA2222414DB00117A57 /* BNRLine.m */; };
+		8E9D7DA52224183600117A57 /* BNRDrawView.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E9D7DA42224183600117A57 /* BNRDrawView.m */; };
+		8E9D7DA92224190400117A57 /* BNRDrawViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E9D7DA82224190400117A57 /* BNRDrawViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +29,12 @@
 		8E77B40E221EA6600070582B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		8E77B410221EA6600070582B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		8E77B411221EA6600070582B /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		8E9D7DA1222414DB00117A57 /* BNRLine.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = BNRLine.h; path = TouchTracker/BNRLine.h; sourceTree = "<group>"; };
+		8E9D7DA2222414DB00117A57 /* BNRLine.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = BNRLine.m; path = TouchTracker/BNRLine.m; sourceTree = "<group>"; };
+		8E9D7DA42224183600117A57 /* BNRDrawView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BNRDrawView.m; sourceTree = "<group>"; };
+		8E9D7DA62224184B00117A57 /* BNRDrawView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BNRDrawView.h; sourceTree = "<group>"; };
+		8E9D7DA72224190400117A57 /* BNRDrawViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BNRDrawViewController.h; sourceTree = "<group>"; };
+		8E9D7DA82224190400117A57 /* BNRDrawViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BNRDrawViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -42,6 +51,12 @@
 		8E77B3F6221EA65F0070582B = {
 			isa = PBXGroup;
 			children = (
+				8E9D7DA72224190400117A57 /* BNRDrawViewController.h */,
+				8E9D7DA82224190400117A57 /* BNRDrawViewController.m */,
+				8E9D7DA42224183600117A57 /* BNRDrawView.m */,
+				8E9D7DA62224184B00117A57 /* BNRDrawView.h */,
+				8E9D7DA1222414DB00117A57 /* BNRLine.h */,
+				8E9D7DA2222414DB00117A57 /* BNRLine.m */,
 				8E77B401221EA65F0070582B /* TouchTracker */,
 				8E77B400221EA65F0070582B /* Products */,
 			);
@@ -142,8 +157,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8E9D7DA52224183600117A57 /* BNRDrawView.m in Sources */,
 				8E77B407221EA65F0070582B /* ViewController.m in Sources */,
+				8E9D7DA92224190400117A57 /* BNRDrawViewController.m in Sources */,
 				8E77B412221EA6600070582B /* main.m in Sources */,
+				8E9D7DA3222414DB00117A57 /* BNRLine.m in Sources */,
 				8E77B404221EA65F0070582B /* AppDelegate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
