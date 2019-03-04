@@ -7,10 +7,11 @@
 //
 
 #import <Foundation/Foundation.h>
+#import <UIKit/UIKit.h>
 
 @interface BNRLine:NSObject
-@property (nonatomic) Point begin;
-@property (nonatomic) Point end;
+@property (nonatomic) CGPoint begin;
+@property (nonatomic) CGPoint end;
 @end
 
 
