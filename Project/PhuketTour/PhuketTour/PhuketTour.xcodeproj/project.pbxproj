@@ -9,12 +9,14 @@
 /* Begin PBXBuildFile section */
 		8E9FA1F9226DDBDB00E38B06 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E9FA1F8226DDBDB00E38B06 /* AppDelegate.m */; };
 		8E9FA1FC226DDBDB00E38B06 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E9FA1FB226DDBDB00E38B06 /* ViewController.m */; };
-		8E9FA1FF226DDBDB00E38B06 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8E9FA1FD226DDBDB00E38B06 /* Main.storyboard */; };
 		8E9FA201226DDBDC00E38B06 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8E9FA200226DDBDC00E38B06 /* Assets.xcassets */; };
 		8E9FA204226DDBDC00E38B06 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8E9FA202226DDBDC00E38B06 /* LaunchScreen.storyboard */; };
 		8E9FA207226DDBDC00E38B06 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E9FA206226DDBDC00E38B06 /* main.m */; };
 		8E9FA211226DDBDD00E38B06 /* PhuketTourTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E9FA210226DDBDD00E38B06 /* PhuketTourTests.m */; };
 		8E9FA21C226DDBDD00E38B06 /* PhuketTourUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E9FA21B226DDBDD00E38B06 /* PhuketTourUITests.m */; };
+		8E9FA22A226DDF5700E38B06 /* ViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8E9FA229226DDF5700E38B06 /* ViewController.xib */; };
+		8E9FA22B226DE0C300E38B06 /* ViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8E9FA229226DDF5700E38B06 /* ViewController.xib */; };
+		8E9FA22C226DE0C300E38B06 /* ViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8E9FA229226DDF5700E38B06 /* ViewController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,7 +42,6 @@
 		8E9FA1F8226DDBDB00E38B06 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		8E9FA1FA226DDBDB00E38B06 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
 		8E9FA1FB226DDBDB00E38B06 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
-		8E9FA1FE226DDBDB00E38B06 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		8E9FA200226DDBDC00E38B06 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		8E9FA203226DDBDC00E38B06 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		8E9FA205226DDBDC00E38B06 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -51,6 +52,7 @@
 		8E9FA217226DDBDD00E38B06 /* PhuketTourUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PhuketTourUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		8E9FA21B226DDBDD00E38B06 /* PhuketTourUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PhuketTourUITests.m; sourceTree = "<group>"; };
 		8E9FA21D226DDBDD00E38B06 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8E9FA229226DDF5700E38B06 /* ViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ViewController.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -105,7 +107,7 @@
 				8E9FA1F8226DDBDB00E38B06 /* AppDelegate.m */,
 				8E9FA1FA226DDBDB00E38B06 /* ViewController.h */,
 				8E9FA1FB226DDBDB00E38B06 /* ViewController.m */,
-				8E9FA1FD226DDBDB00E38B06 /* Main.storyboard */,
+				8E9FA229226DDF5700E38B06 /* ViewController.xib */,
 				8E9FA200226DDBDC00E38B06 /* Assets.xcassets */,
 				8E9FA202226DDBDC00E38B06 /* LaunchScreen.storyboard */,
 				8E9FA205226DDBDC00E38B06 /* Info.plist */,
@@ -237,7 +239,7 @@
 			files = (
 				8E9FA204226DDBDC00E38B06 /* LaunchScreen.storyboard in Resources */,
 				8E9FA201226DDBDC00E38B06 /* Assets.xcassets in Resources */,
-				8E9FA1FF226DDBDB00E38B06 /* Main.storyboard in Resources */,
+				8E9FA22A226DDF5700E38B06 /* ViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -245,6 +247,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8E9FA22B226DE0C300E38B06 /* ViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -252,6 +255,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8E9FA22C226DE0C300E38B06 /* ViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -300,14 +304,6 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		8E9FA1FD226DDBDB00E38B06 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				8E9FA1FE226DDBDB00E38B06 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		8E9FA202226DDBDC00E38B06 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -436,6 +432,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = KFFJ74Q3SA;
 				INFOPLIST_FILE = PhuketTour/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -452,6 +449,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = KFFJ74Q3SA;
 				INFOPLIST_FILE = PhuketTour/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
